@@ -1,0 +1,5 @@
+pip install opencv-python
+pip install pylance
+pip install mediapipe
+sudo apt-get update
+sudo apt-get install -y libgl1
