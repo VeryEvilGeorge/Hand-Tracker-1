@@ -4,7 +4,11 @@ First hand tracker prototype. Goal is to use a hand gesture as a passcode to rin
 If it isn't working, type this into the terminal in the same directory:
 
 pip install opencv-python
+
 pip install pylance
+
 pip install mediapipe
+
 sudo apt-get update
+
 sudo apt-get install -y libgl1
