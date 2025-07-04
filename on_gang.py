@@ -100,7 +100,8 @@ with mp_hands.Hands(min_detection_confidence = 0.8, min_tracking_confidence = 0.
                     print("True")
                 elif 7 * math.sqrt((Mx-Rx)**2 + (My-Ry)**2) < math.sqrt((Mx-Ix)**2 + (My-Iy)**2) and 5 * math.sqrt((Mx-Rx)**2 + (My-Ry)**2) < math.sqrt((Rx-Px)**2 + (Ry-Py)**2) and count >=3:
                     print("Saved")
-                    imgDir=r"C:/Users/georg/OneDrive\Desktop/gang_recogs/Output Images"
+                    #saves to output images in same directory
+                    imgDir = os.path.join(os.path.dirname(__file__), "Output Images")
                     os.chdir(imgDir)
                     filename='{}.jpg'.format(uuid.uuid1())
                     #filename='temp.jpg'
